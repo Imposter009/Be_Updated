@@ -26,7 +26,7 @@ export default class Weather extends Component {
           {this.state.reports.map((element) => {
             return <div className="my-3 " key={element.id} >
               {/* <WeatherItem Region={element.name} latitude={element.coord.lat} longitude={element.coord.lon} temp={element.main.temp} min_temp={element.main.temp_min} max_temp={element.main.temp_max} /> */}
-              <WeatherItem Region= {element.id} />
+              <WeatherItem Region={element.id} />
             </div>
           })}
 
