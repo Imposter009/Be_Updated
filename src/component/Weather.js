@@ -18,11 +18,9 @@ export default class Weather extends Component {
 
   render() {
     return (
-      <div className='container my-4'>
+      <div className='container  my-4'>
         <h3>Weather is..</h3>
-        <div className="row" >
-          {/* <input type="search" onChange={(event) =>
-            setcity = 'event'} /> */}
+        <div className="row card" >
           {this.state.reports.map((element) => {
             return <div className="my-3 " key={element.id} >
               {/* <WeatherItem Region={element.name} latitude={element.coord.lat} longitude={element.coord.lon} temp={element.main.temp} min_temp={element.main.temp_min} max_temp={element.main.temp_max} /> */}
