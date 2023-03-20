@@ -15,12 +15,20 @@ export default class NavBar extends Component {
                                 <li className="nav-item">
                                     <a className="nav-link active" aria-current="page" href="/">Home</a>
                                 </li>
-
-                                <li className="nav-item">
-                                    <a className="nav-link disabled">News</a>
-                                </li>
                                 <li className="nav-item">
                                     <a className="nav-link disabled">Weather</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link disabled">Headlines</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link disabled">Sports-News</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link disabled">Business-News</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link disabled">Market-News</a>
                                 </li>
                             </ul>
                             <form className="d-flex" role="search">
