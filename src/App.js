@@ -11,7 +11,9 @@ export default class App extends Component {
       <div>
         <NavBar />
         <Weather />
-        <News size={9} category='general' />
+        <News key='1' size={9} category='general' />
+        <News key='2' size={9} category='sport' />
+        <News key='3' size={9} category='education' />
       </div>
     )
   }
