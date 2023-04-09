@@ -17,10 +17,10 @@ export default class App extends Component {
       <div>
         {/* <Weather /> */}
         <Router>
-        <NavBar />
+          <NavBar />
           <Routes>
-            <Route exact path="/weather" element={<Weather/>} />
-            <Route exact path="/general" element={<News key='general' size={9} category='general' />} />
+            <Route exact path="/weather" element={<Weather />} />
+            <Route exact path="/general" component={<Weather/>} element={<News key='general' size={9} category='general' />} />
             <Route exact path="/sports" element={<News key='sports' size={9} category='sports' />} />
             <Route exact path="/technology" element={<News key='technology' size={9} category='technology' />} />
             <Route exact path="/science" element={<News key='science' size={9} category='science' />} />

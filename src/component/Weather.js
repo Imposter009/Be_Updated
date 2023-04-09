@@ -21,9 +21,9 @@ export default class Weather extends Component {
   render() {
     return (
       <>
-        <div className='container  my-4'>
-          <h3>Weather is..</h3>
-          <div className="row card" >
+        <div className='container  my-3'>
+          <h1 className='p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end'>Weather Forecast </h1>
+          <div className="row" >
             {this.state.reports.map((element) => {
               return <div className="my-3 " key={element.id} >
                 <WeatherItem name={this.state.resp.name}Region={this.state.resp.id} latitude={this.state.resp.coord.lat} longitude={this.state.resp.coord.lon} temp={this.state.resp.main.temp} min_temp={this.state.resp.main.temp_min} max_temp={this.state.resp.main.temp_max} humid={this.state.resp.main.humidity} press={this.state.resp.main.pressure} desc={this.state.resp.weather[0].main}/>
